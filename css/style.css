@@ -1,0 +1,98 @@
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/*1 общие правила*/
+/* Задаем в руте переменные для шрифта и цвета*/
+:root {
+  --main-font: "Roboto";
+  --second-font: "Raleway";
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --second-black: #212121;
+  --blue-color: rgb(33, 150, 243);
+  --grey-color: rgba(236, 236, 236, 1);
+  --text-style: normal;
+  --font-size: 14px;
+}
+/*основные правила для всего тела*/
+.page {
+  font-family: var(--main-font), sans-serif;
+  background-color: var(--white-color);
+  font-size: var(--font-size);
+}
+/*убираем все подчеркивания ссылок*/
+a {
+  text-decoration: none;
+}
+/*Делаем контейнер div с class-container для 
+позиционирования размера контента страницы*/
+.container {
+  
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+
+/* Header*/
+.header {
+padding-top: 24px;
+padding-bottom: 24px;
+}
+
+/*Добовляем селектор чтобы убрать отступы
+в контейнере div нашего header*/
+.header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*logo*/
+.logo {
+  
+  font-family: var(--second-font), sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+}
+/*display: flex в порядок по горизонтали
+ list-style: none; убераем номерацию*/
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  gap: 52px;
+}
+
+.nav-item {
+}
+/*даем цвет первой части logo и
+  делаем ховеры для ссылок*/
+.logo-first {
+  color: var(--blue-color);
+}
+.nav-list .nav-link {
+  color: var(--second-black);
+}
+.nav-list .nav-link:hover,
+.nav-list .nav-link:focus {
+  color: var(--blue-color);
+}
+/* Контакты*/
+.nav-contact {
+display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  gap: 52px;
+}
+.cont-item {
+}
+.cont-link {
+  color: var(--blue-color);
+}
+/* tractor*/
