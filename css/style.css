@@ -279,6 +279,7 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
+
 }
 
 .contact-link {
@@ -289,19 +290,27 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.contact-link:hover,
+.contact-link:focus{
+  color: var(--blue-color);
+}
+
 .cont-item {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
+  
 }
 .adr-link {
   font-style: var(--text-style);
   color: var(--adress-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71px;
-  letter-spacing: 0.03em;
-  display: block;
+  display: inline-block;
   padding: 10px 10px 10px 0;
+  max-block-size: 100px;
+  
+}
+.adr-link:hover,
+.adr-link:focus{
+  color: var(--blue-color);
 }
