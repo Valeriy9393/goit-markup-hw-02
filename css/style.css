@@ -8,8 +8,12 @@ font-family: 'Roboto', sans-serif; */
   --second-font: "Raleway";
   --white-color: #ffffff;
   --black-color: #000000;
+  --title-font: #2f303a;
   --second-black: #212121;
-  --blue-color: rgb(33, 150, 243);
+  --team-color: #f5f4fa;
+  --second-grey: #757575;
+  --adress-color: rgba(255, 255, 255, 0.6);
+  --blue-color: #2196f3;
   --grey-color: rgba(236, 236, 236, 1);
   --text-style: normal;
   --font-size: 14px;
@@ -19,6 +23,7 @@ font-family: 'Roboto', sans-serif; */
   font-family: var(--main-font), sans-serif;
   background-color: var(--white-color);
   font-size: var(--font-size);
+  font-style: var(--text-style);
 }
 /*убираем все подчеркивания ссылок*/
 a {
@@ -27,17 +32,16 @@ a {
 /*Делаем контейнер div с class-container для 
 позиционирования размера контента страницы*/
 .container {
-  
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
 }
 
 /* Header*/
 .header {
-padding-top: 24px;
-padding-bottom: 24px;
+  background-color: var(--white-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /*Добовляем селектор чтобы убрать отступы
@@ -45,26 +49,30 @@ padding-bottom: 24px;
 .header > .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 /*logo*/
 .logo {
-  
   font-family: var(--second-font), sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.23;
   letter-spacing: 0.03em;
+  color: var(--black-color);
+}
+.nav-site {
+  padding-left: 93px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 /*display: flex в порядок по горизонтали
  list-style: none; убераем номерацию*/
 .nav-list {
   display: flex;
   list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
   gap: 52px;
+  padding: 0;
 }
 
 .nav-item {
@@ -83,16 +91,217 @@ padding-bottom: 24px;
 }
 /* Контакты*/
 .nav-contact {
-display: flex;
+  display: flex;
   list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
   gap: 52px;
+  margin-left: auto;
 }
 .cont-item {
 }
 .cont-link {
+  color: var(--second-grey);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.cont-link:hover,
+.cont-link:focus {
   color: var(--blue-color);
 }
-/* tractor*/
+/*начинаем "hero-section */
+.hero-section {
+  background-color: var(--title-font);
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 94px;
+}
+
+.hero-title {
+  color: var(--white-color);
+  width: 696px;
+  height: 120px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.hero-button {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+.section-example {
+  height: 101px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 94px;
+}
+/*В секции "section-example можно не 
+задавать блок exm-container так 
+как правила такиеже как и в container
+.exm-container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
+*/
+.exm-title {
+  display: none;
+}
+.exm-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 30px;
+}
+.exm-item {
+  width: 270px;
+}
+.qualities {
+  color: var(--second-black);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.qualities-description {
+  color: var(--second-grey);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin: 0px;
+}
+.work-title {
+  color: var(--second-black);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.work-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 94px;
+}
+
+.section-team {
+  background-color: var(--team-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-list {
+  width: 1170px;
+
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.team-title {
+  color: var(--second-black);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.employee-name {
+  color: var(--second-black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.profession {
+  color: var(--second-grey);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.team-img {
+  width: 270px;
+  height: 260px;
+}
+.footer {
+  background-color: var(--title-font);
+  height: 274px;
+}
+.footer-logo {
+  font-family: var(--second-font), sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  display: block;
+  padding-top: 64px;
+  padding-bottom: 24px;
+}
+
+.logo-two {
+  color: var(--white-color);
+}
+
+.adr-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-link {
+  font-style: var(--text-style);
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.cont-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+}
+.adr-link {
+  font-style: var(--text-style);
+  color: var(--adress-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  display: block;
+  padding: 10px 10px 10px 0;
+}
