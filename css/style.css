@@ -14,7 +14,6 @@ font-family: 'Roboto', sans-serif; */
   --second-grey: #757575;
   --adress-color: rgba(255, 255, 255, 0.6);
   --blue-color: #2196f3;
-  --grey-color: rgba(236, 236, 236, 1);
   --text-style: normal;
   --font-size: 14px;
 }
@@ -313,4 +312,74 @@ a {
 .adr-link:hover,
 .adr-link:focus{
   color: var(--blue-color);
+}
+
+/*Страница 2 */
+.button-Portfolio {
+}
+.container {
+}
+.title {
+  display: none;
+}
+.btn-list {
+  list-style: none;
+display: flex;
+justify-content: center; 
+}
+
+.btn-item {
+}
+.btn{
+  background-color: var(--team-color);
+  color: var(--second-black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  margin: 94px 8px 50px 8px;
+  cursor: pointer;
+ border-style: none;
+  border-radius: 4px;
+ 
+
+
+}
+.btn:hover,
+.btn:focus{
+  background-color:var(--blue-color);
+color: var(--white-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+.card {
+
+}
+.card-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  
+}
+.card-item {
+  
+  
+}
+.card-link {
+}
+.img-card {
+}
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+ 
+}
+.card-description {
 }
