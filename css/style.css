@@ -14,6 +14,7 @@ font-family: 'Roboto', sans-serif; */
   --second-grey: #757575;
   --adress-color: rgba(255, 255, 255, 0.6);
   --blue-color: #2196f3;
+  --border-grey: #eeeeee;
   --text-style: normal;
   --font-size: 14px;
 }
@@ -278,7 +279,6 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
-
 }
 
 .contact-link {
@@ -290,7 +290,7 @@ a {
   letter-spacing: 0.03em;
 }
 .contact-link:hover,
-.contact-link:focus{
+.contact-link:focus {
   color: var(--blue-color);
 }
 
@@ -299,18 +299,16 @@ a {
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
-  
 }
 .adr-link {
   font-style: var(--text-style);
   color: var(--adress-color);
   display: inline-block;
-  padding: 10px 10px 10px 0;
+  padding: 10px 10px 7px 0;
   max-block-size: 100px;
-  
 }
 .adr-link:hover,
-.adr-link:focus{
+.adr-link:focus {
   color: var(--blue-color);
 }
 
@@ -324,13 +322,15 @@ a {
 }
 .btn-list {
   list-style: none;
-display: flex;
-justify-content: center; 
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .btn-item {
 }
-.btn{
+.btn {
   background-color: var(--team-color);
   color: var(--second-black);
   font-weight: 500;
@@ -338,48 +338,52 @@ justify-content: center;
   line-height: 1.62;
   letter-spacing: 0.03em;
   padding: 6px 22px;
-  margin: 94px 8px 50px 8px;
+  margin: 94px 4px 50px 4px;
   cursor: pointer;
- border-style: none;
+  border-style: none;
   border-radius: 4px;
- 
-
-
 }
 .btn:hover,
-.btn:focus{
-  background-color:var(--blue-color);
-color: var(--white-color);
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+.btn:focus {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
-
 .card {
-
 }
 .card-list {
   list-style: none;
   padding: 0;
+  margin: 0 0 94px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  
 }
 .card-item {
-  
-  
+  background: var(--white-color);
+  border: 1px solid var(--border-grey);
 }
 .card-link {
 }
+
 .img-card {
 }
 .card-title {
+  color: var(--second-black);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
- 
+  padding: 20px 0 4px 24px;
+  margin: 0;
 }
 .card-description {
+  color: var(--second-grey);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  margin: 0 0 20px 24px;
 }
